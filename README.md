@@ -17,6 +17,14 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 pip install -r requirements.txt
 ```
 
+I got the dataset from nerfstudio, running the `ns-download-data blender` command and then copying it to `./data/`.
+
+Run it:
+
+```bash
+CUDA_VISIBLE_DEVICES=1 python train.py --data data/blender/chair --method kplanes --datatype synthetic --output k_planes --batch_size 512
+```
+
 ## Features
 
 - [x] Vanilla NeRF, K-Planes and Cobafa
