@@ -4,6 +4,19 @@ Concise (<1000 locs) and fast implementation of several NeRF techniques. Current
 
 [](https://user-images.githubusercontent.com/53355258/227556618-2e01b870-4191-4323-b254-c13c01c428db.mp4)
 
+## Setup
+
+Create a conda environment, install PyTorch, and install requirements.
+
+```bash
+conda create -n tinynerf python=3.10
+conda activate tinynerf
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt
+```
+
 ## Features
 
 - [x] Vanilla NeRF, K-Planes and Cobafa
