@@ -22,7 +22,7 @@ I got the dataset from nerfstudio, running the `ns-download-data blender` comman
 Run it:
 
 ```bash
-CUDA_VISIBLE_DEVICES=1 python train.py --data data/blender/chair --method kplanes --datatype synthetic --output k_planes --batch_size 512
+CUDA_VISIBLE_DEVICES=0 python train.py --data data/blender/chair --method kplanes --datatype synthetic --output k_planes --batch_size 512
 ```
 
 ## Features
