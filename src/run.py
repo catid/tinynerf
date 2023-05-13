@@ -136,7 +136,7 @@ def train(cfg: TrainConfig):
             basis_res=torch.linspace(32., 128, 6).int().tolist(),
             coef_res=64,
             freqs=torch.linspace(2., 8., 6).tolist(),
-            channels=[8,8,8,4,4,4],
+            channels=[16,16,16,4,4,4],
             mlp_hidden_dim=128
         )
         dim = feature_module.feature_dim
